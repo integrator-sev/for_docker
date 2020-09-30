@@ -1,0 +1,2 @@
+FROM tomcat:latest
+ENTRYPOINT ["catalina.sh", "run"]
