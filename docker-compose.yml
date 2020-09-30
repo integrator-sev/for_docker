@@ -9,8 +9,8 @@ services:
   tomcat:
     build:
       dockerfile: tom
-      ports:
-        - "8888:8080"
+    ports:
+      - "8888:8080"
     volumes:
       - ./app:/usr/local/tomcat/webapps
 
