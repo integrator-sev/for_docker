@@ -13,4 +13,5 @@ services:
       - app:/usr/local/tomcat/webapps
 volumes:
   app:
+    driver: local
 
