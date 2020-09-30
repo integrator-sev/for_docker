@@ -1,2 +1,2 @@
-FROM tomcat:latest
+FROM tomcat:8.5.27-slim
 ENTRYPOINT ["catalina.sh", "run"]
