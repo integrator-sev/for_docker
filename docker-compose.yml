@@ -3,12 +3,14 @@ services:
   maven:
     build: mvn
     volumes:
-      - ./app:/webapps
+      - app:/webapps
 
   tomcat:
     build: tom
     ports:
       - "8888:8080"
     volumes:
-      - ./app:/usr/local/tomcat/webapps
+      - app:/usr/local/tomcat/webapps
+volumes:
+  app:
 
