@@ -1,14 +1,12 @@
 version: '3.7'
 services:
   maven:
-    build:
-      dockerfile: mvn
+    build: mvn
     volumes:
       - ./app:/webapps
 
   tomcat:
-    build:
-      dockerfile: tom
+    build: tom
     ports:
       - "8888:8080"
     volumes:
