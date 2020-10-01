@@ -1,2 +1,4 @@
-FROM davidcaste/alpine-tomcat:tomcat8
-ENTRYPOINT ["catalina.sh", "run"]
+FROM alpine
+RUN apk add --no-cache wget tar -y  && mkdir /opt/tomcat && wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.58/bin/apache-tomcat-8.5.58.tar.gz && tar xvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
+EXPOSE 8080
+ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
