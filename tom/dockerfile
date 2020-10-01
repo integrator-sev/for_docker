@@ -1,2 +1,2 @@
-FROM davidcaste/alpine-tomcat
+FROM davidcaste/alpine-tomcat:tomcat8
 ENTRYPOINT ["catalina.sh", "run"]
