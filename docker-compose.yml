@@ -10,7 +10,7 @@ services:
     ports:
       - "8888:8080"
     volumes:
-      - app:/usr/local/tomcat/webapps
+      - app:/opt/tomcat/webapps
 volumes:
   app:
 

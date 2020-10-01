@@ -1,2 +1,2 @@
-FROM tomcat:8.5.27-slim
+FROM davidcaste/alpine-tomcat
 ENTRYPOINT ["catalina.sh", "run"]
